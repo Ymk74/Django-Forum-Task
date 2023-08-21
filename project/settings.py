@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "taggit",
     'forum.apps.ForumConfig',
     'django.contrib.admin',
     'django.contrib.auth',
