@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static 
-from forum.views import question_list
+from forum.views import question_list , question_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('questions/',question_list)
+    path('questions/',question_list),
+    path('questions/<int:id>',question_detail),
 ]
