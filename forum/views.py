@@ -9,6 +9,5 @@ def question_list(request):
 
 def question_detail(request ,id):
     question = Question.objects.get(id=id)
-    answers = Answer.objects.filter(question=question)
-    return render(request, 'forum/detail.html',{'data':question , 'answers':answers})
+    return render(request, 'forum/detail.html',{'data':question})
     
